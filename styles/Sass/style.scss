@@ -1,0 +1,107 @@
+@import 'setup';
+@import 'variables';
+@import 'mediaQueries';
+@import 'typography';
+@import 'mixins';
+@import 'navigation';
+
+header{
+    background-image: url(../../assets/header.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.home{
+    text-align: center;
+}
+.me{
+    height:40%;
+    width:50%;
+}
+button{
+    width:40%;
+    height:20%;
+    border-radius: 5%;
+    box-shadow: 0;
+    background-color: $teal;
+    align-self: center;
+    padding:5% 1%;
+}
+.about{
+    text-align: center;
+    padding:0 5%;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.icons img{
+    height:5%;
+    width:5%;
+}
+.skills h2{
+    text-align: center;
+}
+.skills{
+    padding-bottom: 5%;
+}
+#projects{
+    text-align: center;
+    padding:0 5% 5% 5%;
+}
+#projects img{
+    height:50%;
+    width:50%;
+}
+#projects img:hover, #projects img:focus{
+    opacity: 50%;
+    cursor: pointer;
+}
+#contact{
+    text-align: center;
+}
+.name{
+    margin-bottom: 2%;
+    @include formSettings;
+    padding-bottom: 2%;
+}
+.email{
+    margin-bottom: 2%;
+    @include formSettings; 
+    padding-bottom: 2%;
+}
+.message{
+    @include formSettings;
+}
+#contact button{
+    margin-top: 5%;
+}
+footer{
+    background: black;
+    color: $teal;
+    margin-top:5%;
+    margin-bottom: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+button:hover, button:focus{
+    cursor: pointer;
+    background:lightseagreen;
+}
+i{
+    font-size: 5em;
+    color: black;
+    margin: 5% 0;
+}
+i:hover, i:focus{
+    cursor: pointer;
+    color: lightseagreen;
+}
+section{
+    background-color: $teal;
+    border-radius: 15px;
+}
+
+

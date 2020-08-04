@@ -1,0 +1,64 @@
+
+.mobile a{
+    color: $teal;
+}
+
+
+.mobile label, #hamburger {
+   display: none;
+   }
+.mobile label .hambuger:hover, .hamburger:focus{
+  cursor: pointer;
+  color: lightseagreen;
+}
+
+
+.links { 
+    display: flex;
+    justify-content: space-evenly;
+   }
+.links a{
+    color:$teal ;
+    font-family: $bodyFont;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.links a:hover {
+  background: lightseagreen;
+}
+
+
+@media(max-width: 768px){
+
+  .mobile label { 
+    display: inline-block; 
+    color: black;
+    background: $teal;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .mobile {
+    width: 100%;
+  }
+.links a {
+    padding: 10px;
+    color: $teal;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  .links{
+    width:100%;
+  }
+
+  .links { display: none; }
+  .mobile input:checked ~ .links { display: block; }
+}

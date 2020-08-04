@@ -1,0 +1,36 @@
+@media (min-width:630px){
+ 
+  
+    .cv, form button{
+        width:150px;
+        height:50px;
+        border-radius: 5px;
+        padding:0;
+    }
+    .about img{
+        width:30%;
+    }
+   
+}
+@media (min-width:765px){
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home h2{
+        margin-top: 5%;
+    }
+    #projects a img{
+        width:25%;
+    }
+  
+}
+@media (min-width:1000px){
+    .name, .email{
+        width:50%;
+    }
+    .userInfo.message{
+        width:50%;
+    }
+}

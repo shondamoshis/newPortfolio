@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/8074cb3113.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/Sass/style.css">
+
+    <title>Shonda Moshis</title>
+</head>
+<body>
+    <header>
+        <nav class="mobile">
+            <label class="hamburger" for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div id="home" class="home">
+        <h1>Shonda Moshis</h1>
+        <h2 class="headerSubtitle">Front End Web Developer</h2>
+        <a href="./assets/resume.pdf" download><button class="cv">Download CV</button></a>
+        </div>
+    </header>
+    <section class="wrapper">
+        <div id="about" class="about">
+        <h2>About Me</h2>
+        <img class="me" src="./assets/F6EA45C6-6BD0-44C9-915E-3A400BC30223.JPG" alt="Picture of Shonda Moshis">
+        <p>I'm a Front End Web Developer with a passion for building user friendly, accessible websites. I also really enjoy using clean, concise code. I have a customer service focused management background in the Automotive Industry. Throughout my time in the Automotive Industry, I developed a lot of skills. I have the ability to communicate thoroughly, problem solve efficiently in a fast paced environment and I can work as part of a team, and lead a team as well. I have the ability to learn new skills quickly and am great at managing my time and meeting deadlines.
+        I have a lot of different interests aside from coding! I love animals and do volunteer for a few dog rescues here in Toronto. I also really like to read. I often find a book I really like and read it in just a couple days! I'm told that I am a good cook, and I do like to cook as well as bake. I do like trying all  different sorts of food as well. Travelling is something I absolutely love too. I love to experience different cultures and their food, of course! Fitness is also important to me and I like to do weight/resistance training. 
+        I really like to meet new people, so stop by my <a class="pContact" href="#contact">contact</a> section and say hi!
+      </p>
+        </div>
+        <div class="skills">
+        <h2>Skills</h2>
+        <div class="icons">
+            <img src="./assets/icons/iconfinder_10-html5_104494.svg" alt="html5 icon">
+            <img src="./assets/icons/iconfinder_css3_1608657.svg" alt="css3 icon">
+            <img src="./assets/icons/iconfinder_288_Sass_logo_4375465.svg" alt="sass icon">
+            <img src="./assets/icons/iconfinder_js_282802.svg" alt="javascript icon">
+            <img src="./assets/icons/iconfinder_jQuery_194922.svg" alt="jquery icon">
+            <img src="./assets/icons/iconfinder_react_4691292.svg" alt="react icon">
+            <img src="./assets/icons/iconfinder_firebase_4691533.svg" alt="firebase icon">
+            <img src="./assets/icons/iconfinder_git-square_1608905.svg" alt="git icon">
+            <img src="./assets/icons/iconfinder_github_313481.svg" alt="github icon">
+            <img src="./assets/icons/iconfinder_339_Trello_logo_4375364.svg" alt="trello icon">
+            <img src="./assets/icons/iconfinder_responsive_business_respond_website_research_responsive_web_design_development_4047401.svg" alt="responsive design icon">
+            <img src="./assets/icons/iconfinder_ic_accessibility_48px_351997.svg" alt="accessibility icon">
+        </div>
+        </div>
+    </section>
+    <section class="wrapper" id="projects">
+        <h2>Projects</h2>
+
+        <h3>Dog Breed Selector Quiz</h3>
+        <a href="http://www.shondamoshis.com/shondaMoshisProjectThree/"><img src="./assets/Shonda4.png" alt="Picture of desktop and mobile view of Dog Breed Selector Quiz"></a>
+        <p>HTML5|SASS|JavaScript|JQuery</p>
+
+        <h3>Practice Gratitude</h3>
+        <a href="https://shondamoshis.github.io/shondaMoshisProjectFive/"><img src="./assets/Shonda2.png" alt="Picture of desktop and mobile view of Practice Gratitude App"></a>
+        <p>React|CSS3|Firebase</p>
+
+        <h3>Covid Restaurant & Bar</h3>
+        <a href="https://juno27royalty.github.io/COVIDRestaurantAndBar/"><img src="./assets/Shonda3.png" alt="Picture of desktop and mobile view of Covid Restaurant and Bar App"></a>
+        <p>HTML5|SASS|JavaScript|JQuery|API</p>
+
+        <h3>My Watchlist</h3>
+        <a href="https://tobikoberalphandnull.github.io/project-six/"><img src="./assets/Shonda1.png" alt="Picture of desktop and mobile view of My Watchlist App"></a>
+        <p>React|SASS|Firebase|API</p>
+
+    </section>
+    <section id="contact" class="wrapper">
+        <h2>Contact Me</h2>
+        <form method="POST" class="contactForm" action="http://www.focuspocus.io/magic/eda5efe9f2e6f59b2c1c69e384720a3e">
+            <label class="sr-only" for="name">Name</label>
+            <input required class="name userInfo" placeholder="Name" type="text" name="name">
+            <label class="sr-only" for="email">Email</label>
+            <input required class="email userInfo" placeholder="E-Mail" type="text" name="email">
+            <label class="sr-only" for="message">Message</label>
+            <textarea required placeholder="Message" name="message" class="userInfo message" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contactIcons">
+            <a href="http://www.linkedin.com/in/shonda-moshis"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/smoshisdev"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>Shonda Moshis &#169; 2020 All Rights Reserved </p>
+    </footer>
+</body>
+</html>
