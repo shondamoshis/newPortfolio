@@ -11,22 +11,23 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
+    background-position: center center;
+    background-attachment: fixed;
 }
-.home{
+.title{
     text-align: center;
 }
 .me{
-    height:40%;
-    width:50%;
+    width:30%;
 }
 button{
-    width:40%;
-    height:20%;
-    border-radius: 5%;
+    height: 60px;
+    width: 180px;
+    border-radius: 15px;
     box-shadow: 0;
     background-color: $teal;
     align-self: center;
-    padding:5% 1%;
+    border-style: none;
 }
 .about{
     text-align: center;
@@ -51,8 +52,8 @@ button{
     padding:0 5% 5% 5%;
 }
 #projects img{
-    height:50%;
-    width:50%;
+    height:30%;
+    width:30%;
 }
 #projects img:hover, #projects img:focus{
     opacity: 50%;
@@ -61,21 +62,31 @@ button{
 #contact{
     text-align: center;
 }
-.name{
-    margin-bottom: 2%;
-    @include formSettings;
-    padding-bottom: 2%;
+.contactForm{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-.email{
+.name, .email{
     margin-bottom: 2%;
-    @include formSettings; 
+    padding-left: 2%;
+    padding-top: 2%;
+    border-radius: 15px;
+    border:2px black solid;
+    width:40%;
     padding-bottom: 2%;
 }
 .message{
-    @include formSettings;
+    padding-left: 2%;
+    padding-top: 2%;
+    border-radius: 15px;
+    border:2px black solid;
+    width:40%;
 }
 #contact button{
     margin-top: 5%;
+    border-style: none;
+    background-color: white;
 }
 footer{
     background: black;
@@ -86,12 +97,12 @@ footer{
     width: 100%;
     text-align: center;
 }
-button:hover, button:focus{
+#contact button:hover,#contact button:focus,button:hover, button:focus{
     cursor: pointer;
     background:lightseagreen;
 }
 i{
-    font-size: 5em;
+    font-size: 5rem;
     color: black;
     margin: 5% 0;
 }
@@ -103,5 +114,6 @@ section{
     background-color: $teal;
     border-radius: 15px;
 }
+
 
 

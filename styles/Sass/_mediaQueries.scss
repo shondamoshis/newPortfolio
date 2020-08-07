@@ -1,36 +1,73 @@
-@media (min-width:630px){
- 
-  
-    .cv, form button{
-        width:150px;
-        height:50px;
-        border-radius: 5px;
-        padding:0;
-    }
-    .about img{
-        width:30%;
-    }
-   
-}
-@media (min-width:765px){
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .home h2{
-        margin-top: 5%;
-    }
-    #projects a img{
-        width:25%;
-    }
-  
-}
-@media (min-width:1000px){
-    .name, .email{
-        width:50%;
-    }
-    .userInfo.message{
+
+@media(max-width:900px){
+    input.email, input.name, textarea.message{
         width:50%;
     }
 }
+@media(max-width:775px){
+    header{
+        background: url(../../assets/header.jpg) no-repeat center;
+    }
+    .title h1{
+        font-size: 5rem;
+    }
+    .headerSubtitle{
+        font-size: 3rem;
+    }
+    #about h2, #projects h2, #contact h2, .skills h2{
+        font-size:2.5rem;
+    }
+    #projects h3{
+        font-size: 2rem;
+    }
+    #contact i{
+        font-size: 3rem;
+    }
+}
+@media(max-width:530px){
+    a.mobile{
+        display: block;
+    }
+    ul.menu.mobile{
+        display: block;
+    }
+    ul.menu.desktop{
+        display:none;
+    }
+      input.email, input.name, textarea.message{
+        width:75%;
+    }
+    .title h1{
+        padding-top: 15%;
+    }
+    div.icons img{
+        height:8%;
+        width:8%;
+    }
+}
+@media(max-width:475px){
+    .title h1{
+        font-size: 3.5rem;
+        padding-top: 40%;
+    }
+    .headerSubtitle{
+        font-size: 2rem;
+    }
+    #about h2, #projects h2, #contact h2, .skills h2{
+        font-size:2rem;
+    }
+    #projects h3{
+        font-size: 1.5rem;
+    }
+    p, li, button{
+        font-size: 1rem;
+    }
+    #projects p{
+        font-size: 1rem;
+    }
+    #contact button{
+        width:120px;
+        height:40px;
+    }
+}
+    

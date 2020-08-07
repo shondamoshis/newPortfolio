@@ -3,11 +3,11 @@ h1{
     font-family: $headFont;
     color: $teal;
     margin-top: 0;
-    padding-top: 15%;
+    padding-top: 10%;
     text-shadow: white 1px 0 5px;
 }
 h2{
-    font-size: 4em;
+    font-size: 4rem;
     font-family: $headFont;
     color:black;
     margin-top: 20%;
@@ -17,17 +17,21 @@ h2{
 .headerSubtitle{
     color:$teal;
     padding-top: 0;
+    margin-top: 0;
 }
 h3{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-family: $headFont;
 }
 p, li, button{
     font-family: $bodyFont;
-    font-size:1.5em ;
+    font-size:1.5rem ;
+}
+.about p{
+    line-height: 1.5;
 }
 footer p{
-    font-size: 1em;
+    font-size: 1rem;
     vertical-align: middle;
 }
 .pContact{
@@ -37,4 +41,12 @@ footer p{
 }
 .pContact:hover, .pContact:focus{
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-family: $bodyFont;
+    color: $teal;
+}
+li{
+    list-style-type: none;
 }
